@@ -1,0 +1,42 @@
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --color-ink: #263b35;
+  --color-muted: #586a63;
+  --color-primary: #356b59;
+  --color-primary-dark: #285443;
+  --color-surface: #f4f6f2;
+  --color-accent: #e6ede6;
+}
+
+body {
+  margin: 0;
+  color: var(--color-ink);
+  font-family: Arial, sans-serif;
+  line-height: 1.65;
+}
+
+.btn-primary {
+  --bs-btn-bg: var(--color-primary);
+  --bs-btn-border-color: var(--color-primary);
+  --bs-btn-hover-bg: var(--color-primary-dark);
+  --bs-btn-hover-border-color: var(--color-primary-dark);
+}
+
+.btn-outline-primary {
+  --bs-btn-color: var(--color-primary);
+  --bs-btn-border-color: var(--color-primary);
+  --bs-btn-hover-bg: var(--color-primary);
+  --bs-btn-hover-border-color: var(--color-primary);
+}
+
+.site-header {
+  background: #fff;
+}
+
+.navbar {
+  min-height: 82px;
+}
