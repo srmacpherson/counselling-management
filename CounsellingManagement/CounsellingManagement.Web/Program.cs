@@ -1,9 +1,14 @@
-var builder = WebApplication.CreateBuilder(args);
+using CounsellingManagement.Web.Booking;
+
+WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddSingleton(new BookingPolicy());
+builder.Services.AddSingleton<AvailabilityService>();
+builder.Services.AddSingleton<BookingService>();
 
-var app = builder.Build();
+WebApplication app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
